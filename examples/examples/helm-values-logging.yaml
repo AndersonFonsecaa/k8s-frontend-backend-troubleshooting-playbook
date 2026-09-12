@@ -1,0 +1,10 @@
+# Exemplo de values para habilitar logging estruturado e request ID
+app:
+  logging:
+    format: json
+    requestId:
+      enabled: true
+      header: X-Request-Id
+  tracing:
+    enabled: true
+    samplerRatio: 0.1
